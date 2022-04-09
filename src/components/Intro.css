@@ -1,0 +1,121 @@
+.intro {
+  position: relative;
+}
+
+.intro__gradients {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 126px;
+  right: 193px;
+  margin: 0;
+}
+
+.intro__gradient1 {
+  position: absolute;
+  background: linear-gradient(180deg, #FF08AB 0%, rgba(245, 138, 37, 0) 100%, rgba(112, 97, 163, 0) 100%);
+  filter: blur(100px);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.intro__gradient2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, #FC50B7 0%, rgba(255, 197, 111, 0.46) 100%);
+  filter: blur(200px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  z-index: 1;
+}
+
+.intro__title {
+  color: #ffffff;
+  font-family: 'SF Pro Display', 'sans-serif';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  margin: 0;
+}
+
+.intro__about {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'SF Pro Display', 'sans-serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  margin: 0;
+  max-width: 469px;
+}
+
+.intro__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.intro__button {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 0;
+  font-family: 'SF Pro Text', 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  border: none;
+  letter-spacing: 0.0043em;
+  width: 122px;
+  height: 48px;
+  opacity: 1;
+  transition: linear 0.25s opacity;
+}
+
+.intro__call {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.0043em;
+  color: #ffffff;
+  width: fit-content;
+  margin: 13px 16px;
+}
+
+.intro__button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.intro__content {
+  margin: 179px 0 246px 152px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro__link {
+  transition: linear 0.25sec opacity;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.intro__link:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 767px) {
+  .intro__content {
+    margin: 179px auto 246px;
+    width: fit-content;
+  }
+}
