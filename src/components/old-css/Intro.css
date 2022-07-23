@@ -1,5 +1,7 @@
 .intro {
   position: relative;
+  max-width: 1440px;
+  margin: 109px auto 0;
 }
 
 .intro__gradients {
@@ -7,34 +9,34 @@
   width: 400px;
   height: 400px;
   top: 126px;
-  right: 193px;
+  right: 13.402778%;
   margin: 0;
+  z-index: -1;
+  display: flex;
 }
 
 .intro__gradient1 {
-  position: absolute;
-  background: linear-gradient(180deg, #FF08AB 0%, rgba(245, 138, 37, 0) 100%, rgba(112, 97, 163, 0) 100%);
-  filter: blur(100px);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
+  background: linear-gradient(180deg, #FF08AB 0%, rgba(112, 97, 163, 0) 100%);
+  filter: blur(40px);
+  width: 215px;
+  height: 201.6px;
+  border-radius: 50% 50% 35% 35%;
+  margin: 0 auto;
+  opacity: 0.7;
 }
 
 .intro__gradient2 {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  width: 369.6px;
+  height: 363.2px;
   background: linear-gradient(180deg, #FC50B7 0%, rgba(255, 197, 111, 0.46) 100%);
-  filter: blur(200px);
+  filter: blur(40px);
   transform: matrix(-1, 0, 0, 1, 0, 0);
-  z-index: 1;
+  border-radius: 65% 50% 70% 50%;
+  opacity: 0.5;
 }
 
-.intro__title {
+.intro__header {
   color: #ffffff;
   font-family: 'SF Pro Display', 'sans-serif';
   font-style: normal;
@@ -44,7 +46,7 @@
   margin: 0;
 }
 
-.intro__about {
+.intro__text {
   color: rgba(255, 255, 255, 0.7);
   font-family: 'SF Pro Display', 'sans-serif';
   font-style: normal;
@@ -61,6 +63,7 @@
   align-items: center;
 }
 
+/* Button */
 .intro__button {
   color: rgba(0, 0, 0, 0.87);
   background-color: #ffffff;
@@ -96,8 +99,10 @@
   cursor: pointer;
 }
 
-.intro__content {
-  margin: 179px 0 246px 152px;
+/* IntroAboutWrapper */
+.intro__about {
+  margin: 0 0 0 152px;
+  padding: 179px 0 246px 0;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -114,8 +119,24 @@
 }
 
 @media (max-width: 767px) {
-  .intro__content {
-    margin: 179px auto 246px;
+  /* IntroAboutWrapper */
+  .intro__about {
+    margin: 100px auto 0;
+    padding-bottom: 178px;
     width: fit-content;
+    max-width: 369px;
+    text-align: center;
+  }
+
+  .intro__header {
+    font-size: 48px;
+  }
+
+  .intro__text {
+    font-size: 21px;
+  }
+
+  .intro__actions {
+    justify-content: center;
   }
 }

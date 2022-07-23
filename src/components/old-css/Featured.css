@@ -1,0 +1,112 @@
+.featured {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  height: 720px;
+  overflow: hidden;
+}
+
+.featured__about {
+  max-width: 654px;
+  margin: 104px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+.featured__header {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  /* identical to box height, or 64px */
+  text-align: center;
+  letter-spacing: 0.0022em;
+  /* Text + Icons/Dark • High Emphasis */
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.featured__text {
+  font-family: 'SF Pro Display', 'sans-serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%; /* or 29px */
+  text-align: center;
+  letter-spacing: 0.0007em;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  /* max-width: 654px; */
+}
+
+.featured__call {
+  margin: 13px 16px;
+  justify-self: center;
+  width: fit-content;
+  color: #ffffff;
+}
+
+.featured__image {
+  margin: 0 auto;
+  /* width: 722px; */
+  opacity: .5;
+}
+
+.featured__gradients {
+  position: absolute;
+  display: flex;
+  width: 380.8px;
+  height: 357.6px;
+  margin: 0;
+  border-radius: 50%;
+  z-index: -1;
+  margin: 57px auto 0 62px;
+}
+
+.featured__planet {
+  /* Planet */
+  justify-self: center;
+  margin: 0 auto;
+  width: 225.6px;
+  height: 217.6px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.44) 0%, #B40463 100%);
+  filter: blur(40px);
+  opacity: 0.3;
+}
+
+.featured__eclipse {
+  /* Eclipse */
+  position: absolute;
+  width: 380.8px;
+  height: 357.6px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.46) 0%, rgba(255, 0, 138, 0.28) 100%);
+  filter: blur(40px);
+  opacity: 0.3;
+  border-radius: 50% 50% 50% 50%;
+}
+
+@media (max-width: 767px) {
+  .featured__header {
+    font-size: 48px;
+  }
+
+  .featured__about {
+    margin-top: 52px;
+  }
+
+  .featured__text {
+    max-width: 369px;
+  }
+  
+  .featured__image {
+    max-width: 369px;
+    margin: 0 auto;
+    align-self: center;
+  }
+}

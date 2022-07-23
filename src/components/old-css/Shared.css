@@ -1,0 +1,58 @@
+.link {
+  transition: linear 0.25s opacity;
+  opacity: 1;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.link:hover {
+  opacity: 0.75;
+}
+
+.tag__bubble {
+  background-color: #333333;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.tag {
+  /* Tiny • 12 */
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;  /* identical to box height, or 133% */
+  /* Text + Icons/Dark • High Emphasis */
+  color: #FFFFFF;
+  margin: 6px 12px;
+}
+
+.header {
+  color: #ffffff;
+  font-family: 'SF Pro Display', 'sans-serif';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  margin: 0;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'SF Pro Display', 'sans-serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .header {
+    font-size: 48px;
+  }
+
+  .text {
+    font-size: 21px;
+  }
+}
