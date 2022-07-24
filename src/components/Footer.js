@@ -11,9 +11,9 @@ const Footer = () => {
     <FooterSection>
       <Link href="https://www.renita.io"><FooterText>&copy; 2021 your name</FooterText></Link>
       <FooterMenu>
-        <Link href="#intro"><FooterText>Work</FooterText></Link>
+        {/* <Link href="#intro"><FooterText>Work</FooterText></Link>
         <Link href="#about"><FooterText>About</FooterText></Link>
-        <Link href="#resume"><FooterText>Resume</FooterText></Link>
+        <Link href="#resume"><FooterText>Resume</FooterText></Link> */}
       </FooterMenu>
       <Link onClick={scrollToTop}><FooterBack>Back up &#8593;</FooterBack></Link>
     </FooterSection>
