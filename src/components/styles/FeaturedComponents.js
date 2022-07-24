@@ -6,7 +6,7 @@ import { Header } from "./SharedComponents";
 export const FeaturedSection = styled.section`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 104px 0 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   gap: 26px;

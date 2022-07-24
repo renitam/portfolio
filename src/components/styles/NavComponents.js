@@ -4,8 +4,8 @@ import { Link } from "./SharedComponents";
 import dot from '../../images/navoptions.svg';
 
 export const NavMenu = styled.nav`
-  max-width: 1440px;
-  padding: 0 40px;
+  max-width: 1184px;
+  padding: 0 152px;
   position: relative;
   /* box-shadow: 0 2px 10px rgb(255 255 255 / 20%); */
   margin: 0 auto;

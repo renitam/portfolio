@@ -10,7 +10,7 @@ import {
 import arrow from '../../images/arrow.svg';
 
 export const StyledSlider = styled(Slider)`
-  margin: 146px auto;
+  margin: 0 auto;
   max-width: 1032px;
   width: 100%;
 
@@ -79,7 +79,7 @@ export const CarouselSection = styled.section`
   margin: 0 auto;
   display: flex;
   position: relative;
-  padding: 50px 0 150px;
+  padding: 100px 0;
 `;
 
 export const CarouselProject = styled.div`

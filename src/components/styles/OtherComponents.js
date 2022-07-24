@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const OtherSection = styled.section`
   margin: 0 auto;
+  padding: 100px 0 50px;
   max-width: 1440px;
 `;
 
 export const OtherArticle = styled.article`
-  padding: 40px 128px 50px;
+  padding: 0 128px;
 `;
 
 export const OtherColumns = styled.div`

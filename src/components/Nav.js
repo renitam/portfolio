@@ -21,7 +21,7 @@ const Nav = () => {
     <NavMenu id="nav">
       <Avatar alt="profile pic" src={profile} />
       <NavOptions>
-        <NavLink href="work">
+        {/* <NavLink href="work">
           <NavItem>Work</NavItem>
         </NavLink>
         <NavLink href="about">
@@ -29,7 +29,7 @@ const Nav = () => {
         </NavLink>
         <NavLink href="resume">
           <NavItem>Resume</NavItem>
-        </NavLink>
+        </NavLink> */}
       </NavOptions>
       <NavSocials>
         <Link href="https://www.linkedin.com/in/mwangachuchu/" target="_blank">
