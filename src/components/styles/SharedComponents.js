@@ -93,9 +93,12 @@ export const Link = styled.a`
   transition: linear 0.25s opacity;
   opacity: 1;
   text-decoration: none;
+  cursor: pointer;
+
   &:hover {
     opacity: 0.75;
   }
+  
   &:visited {
     color: #ffffff;
   }

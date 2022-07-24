@@ -4,12 +4,12 @@ export const IntroSection = styled.section`
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 79px 0;
+  padding: 100px 0;
 `;
 
 export const IntroAboutArticle = styled.article`
   margin: 0;
-  padding: 100px 0 100px 152px;
+  padding: 100px 152px 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;

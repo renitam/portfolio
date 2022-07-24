@@ -79,7 +79,7 @@ export const CarouselSection = styled.section`
   margin: 0 auto;
   display: flex;
   position: relative;
-  padding: 162px 0;
+  padding: 50px 0 150px;
 `;
 
 export const CarouselProject = styled.div`

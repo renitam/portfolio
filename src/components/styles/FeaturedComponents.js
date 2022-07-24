@@ -25,15 +25,18 @@ export const FeaturedProjectArticle = styled.article`
 export const FeaturedImageWrapper = styled.div`
   margin: 0 auto;
   height: 400px;
-  width: 944px;
+  width: 100%;
 `;
 
 export const FeaturedImage = styled.div`
-  margin: 0;
+  margin: 0 auto;
   opacity: .5;
   width: 100%;
   height: 100%;
+  max-width: 944px;
   object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   object-position: center top;
   background-image: linear-gradient(to bottom, transparent, #222222 100%), url(${iPad});
   border-radius: 0% 0% 3% 3%;
