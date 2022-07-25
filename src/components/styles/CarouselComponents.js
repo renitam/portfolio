@@ -5,7 +5,8 @@ import {
   Text,
   TagList,
   CalltoAction,
-  Header
+  Header,
+  TagBubble
 } from './SharedComponents';
 import arrow from '../../images/arrow.svg';
 
@@ -66,34 +67,28 @@ export const StyledSlider = styled(Slider)`
       border: none;
     }
   }
-
-  @media (max-width: 1179px) {
-    .slick-arrow {
-      display: none !important;
-    }
-  }
 `;
 
 export const CarouselSection = styled.section`
-  max-width: 1440px;
+  max-width: 1184px;
   margin: 0 auto;
   display: flex;
   position: relative;
-  padding: 100px 0;
+  padding: 100px 24px;
 `;
 
-export const CarouselProject = styled.div`
+export const CarouselProject = styled.article`
   display: grid !important;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  padding: 147px auto;
-  max-width: 1440px;
+  max-width: 1184px;
   cursor: pointer;
+  padding: 0 24px;
+  gap: 12px;
 `;
 
 export const CarouselTextWrapper = styled.div`
   margin: 0 auto;
-  width: 384px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -106,6 +101,12 @@ export const CarouselHeader = styled(Header)`
 
 export const CarouselTagList = styled(TagList)`
   margin: 22px 0 10px;
+`;
+
+export const CarouselTagBubble = styled(TagBubble)`
+  &:first-of-type {
+    margin-left: 0;
+  }
 `;
 
 export const CarouselTag = styled(Tag)`
@@ -133,4 +134,9 @@ export const CarouselImage = styled.img`
   max-width: 412px;
   max-height: 379px;
   margin: 24px auto;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
 `;

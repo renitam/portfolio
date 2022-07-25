@@ -21,7 +21,7 @@ import placeholder from '../images/placeholder.png';
 
 const Other = () => {
   return (
-    <OtherSection>
+    <OtherSection id="other">
       <OtherArticle>
         <Header>Other work</Header>
         <OtherColumns>

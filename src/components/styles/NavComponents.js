@@ -5,19 +5,13 @@ import dot from '../../images/navoptions.svg';
 
 export const NavMenu = styled.nav`
   max-width: 1184px;
-  padding: 0 152px;
+  padding: 20px 24px 0;
   position: relative;
   /* box-shadow: 0 2px 10px rgb(255 255 255 / 20%); */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (max-width: 767px) {
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 369px;
-  }
 `;
 
 export const Avatar = styled.img`

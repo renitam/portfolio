@@ -2,25 +2,17 @@ import styled from "styled-components";
 
 export const IntroSection = styled.section`
   position: relative;
-  max-width: 1440px;
+  max-width: 1184px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 24px;
 `;
 
 export const IntroAboutArticle = styled.article`
   margin: 0;
-  padding: 100px 152px 100px;
+  padding: 100px 0 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  @media (max-width: 767px) {
-    margin: 100px auto 0;
-    padding-bottom: 178px;
-    width: fit-content;
-    max-width: 369px;
-    text-align: center;
-  }
 `;
 
 export const IntroHeader = styled.h1`
@@ -32,10 +24,6 @@ export const IntroHeader = styled.h1`
   line-height: 100%;
   margin: 0;
   cursor: default;
-
-  @media (max-width: 767px) {
-    font-size: 48px;
-  }
 `;
 
 export const IntroActionsWrapper = styled.div`

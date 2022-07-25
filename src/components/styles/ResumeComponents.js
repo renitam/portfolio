@@ -16,3 +16,7 @@ export const DateBubble = styled(TagBubble)`
 export const Dates = styled(Tag)`
   color: rgba(0, 0, 0, 0.87);
 `;
+
+export const ResumePdf = styled.iframe`
+  
+`;

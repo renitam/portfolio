@@ -27,6 +27,7 @@ import {
   CarouselImage,
   CarouselText,
   CarouselTag,
+  CarouselTagBubble,
   CarouselTagList,
   CarouselCalltoAction,
 } from './styles/CarouselComponents';
@@ -39,31 +40,33 @@ const carouselSettings = {
   slidesToScroll: 1
 };
 
-const renderSlides = () => {
-  return projects.map(project =>
+// .filter(project => project.name !== featuredProject.name )
+
+const renderSlides = (featuredProject) => {
+  return projects.filter(project => project.name !== featuredProject.name).map(project =>
     <div key={project.key}>
       <CarouselProject>
         <CarouselTextWrapper>
           <CarouselHeader>{project.name}</CarouselHeader>
           <CarouselTagList>
             {project.tags.map((tag, i) =>
-              <TagBubble key={i}>
+              <CarouselTagBubble key={i}>
                 <CarouselTag>{tag}</CarouselTag>
-              </TagBubble>
+              </CarouselTagBubble>
             )}
           </CarouselTagList>
           <CarouselText>{project.desc}</CarouselText>
           <Link href={project.link} target='_blank' rel='noreferrer'>
-            <CarouselCalltoAction>Tell me more &#8594;</CarouselCalltoAction>
+            <CarouselCalltoAction>Show me more &#8594;</CarouselCalltoAction>
           </Link>
         </CarouselTextWrapper>
-        <CarouselImage src={placeholder} alt="a tent on grass with one pine tree" />
+        <CarouselImage src={project.img === "#" ? placeholder : project.img} alt="a tent on grass with one pine tree" />
       </CarouselProject>
     </div>
   )
 }
 
-const Carousel = () => {
+const Carousel = ({ featuredProject }) => {
   return (
     <CarouselSection id='work'>
       <Gradient3>
@@ -74,24 +77,10 @@ const Carousel = () => {
         <Gradient4A />
         <Gradient4B />
       </Gradient4>
-      {/* <CarouselButtonL /> */}
       <StyledSlider {...carouselSettings}>
-        {renderSlides()}
-        {/* <div>
-         <h1>Hello world</h1>
-        </div>
-        <div>
-          <h1>Goodbye world</h1>
-        </div> */}
+        {renderSlides(featuredProject)}
       </StyledSlider>
-      {/* <CarouselButtonR /> */}
     </CarouselSection>
-
-    // <Slider {...carouselSettings}>
-    //   {/* {renderSlides()} */}
-    //   <h1>Hello world</h1>
-    //   <h1>Goodbye world</h1>
-    // </Slider>
   )
 };
 

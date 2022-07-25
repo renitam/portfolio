@@ -1,4 +1,5 @@
 import React from 'react';
+import iPad from "../images/ipad.svg";
 
 import {
   Gradient2,
@@ -43,7 +44,7 @@ const Featured = ({ featuredProject }) => {
         </Link>
       </FeaturedProjectArticle>
       <FeaturedImageWrapper>
-        <FeaturedImage alt='iPad frame'/>
+        <FeaturedImage src={iPad} alt='iPad frame'/>
       </FeaturedImageWrapper>
     </FeaturedSection>
   )

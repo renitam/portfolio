@@ -4,9 +4,9 @@ import iPad from '../../images/ipad.svg';
 import { Header } from "./SharedComponents";
 
 export const FeaturedSection = styled.section`
-  max-width: 1440px;
+  max-width: 1184px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 24px;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -24,7 +24,7 @@ export const FeaturedProjectArticle = styled.article`
 
 export const FeaturedImageWrapper = styled.div`
   margin: 0 auto;
-  height: 400px;
+  height: 100%;
   width: 100%;
 `;
 

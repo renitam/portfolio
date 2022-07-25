@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Slider from "react-slick";
-import dot from '../../images/navoptions.svg';
 
 // Shared components //
 
@@ -13,10 +12,6 @@ export const Header = styled.h2`
   line-height: 100%;
   margin: 0;
   cursor: default;
-
-  @media (max-width: 767px) {
-    font-size: 48px;
-  }
 `;
 
 export const Text = styled.p`
@@ -29,10 +24,6 @@ export const Text = styled.p`
   margin: 0;
   max-width: 469px;
   cursor: default;
-
-  @media (max-width: 767px) {
-    font-size: 21px;
-  }
 `;
 
 export const Text2 = styled.p`
@@ -153,11 +144,11 @@ export const Avatar = styled.img`
   height: 68px;
   margin: 0;
 
-  @media (max-width: 767px) {
-    margin: 0 0 3px 24px;
-    height: 44px;
-    width: 44px;
-  }
+  // @media (max-width: 767px) {
+  //   margin: 0 0 3px 24px;
+  //   height: 44px;
+  //   width: 44px;
+  // }
 `;
 
 
@@ -332,4 +323,13 @@ export const Gradient4B = styled.div`
   background: linear-gradient(180.01deg, rgba(0, 9, 213, 0.65) -8.02%, #64FFB2 85.64%);
   filter: blur(100px);
   border-radius: 50% 50% 70% 50%;
+`;
+
+//
+
+export const WorkWrapper = styled.div`
+  background-color: #222222;
+  color: #fff;
+  width: 100%;
+  height: 100%;
 `;

@@ -4,7 +4,7 @@ import { Text3, CalltoAction } from "./SharedComponents";
 export const FooterSection = styled.footer`
   margin: 0 auto;
   display: flex;
-  padding: 45px 152px;
+  padding: 45px 24px;
   align-items: center;
   max-width: 1184px;
   justify-content: space-between;

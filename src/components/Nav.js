@@ -27,7 +27,7 @@ const Nav = () => {
         <NavLink href="about">
           <NavItem>About</NavItem>
         </NavLink>
-        <NavLink href="resume">
+        <NavLink href="https://standardresume.co/r/Xm38TEt7xRmavS8CZBW8d" target="_blank">
           <NavItem>Resume</NavItem>
         </NavLink> */}
       </NavOptions>
