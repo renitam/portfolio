@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { Link } from "./SharedComponents";
+import { Link } from './SharedComponents';
 import dot from '../../images/navoptions.svg';
 
 export const NavMenu = styled.nav`

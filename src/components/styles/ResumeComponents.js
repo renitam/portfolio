@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Tag, TagBubble } from "./SharedComponents";
+import styled from 'styled-components';
+import { Tag, TagBubble } from './SharedComponents';
 
 export const WorkExperience = styled.section`
   padding: 88px 344px;
@@ -18,5 +18,5 @@ export const Dates = styled(Tag)`
 `;
 
 export const ResumePdf = styled.iframe`
-  
+
 `;

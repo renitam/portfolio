@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import iPad from '../../images/ipad.svg';
-
-import { Header } from "./SharedComponents";
+// import { Header } from './SharedComponents';
 
 export const FeaturedSection = styled.section`
   max-width: 1184px;

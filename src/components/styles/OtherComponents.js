@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const OtherSection = styled.section`
   margin: 0 auto;
@@ -31,7 +31,7 @@ export const OtherCardImg = styled.img`
   width: 100%;
   margin: 24px 0;
   border-radius: 32px;
-`
+`;
 
 export const CardDesc = styled.div`
   display: flex;

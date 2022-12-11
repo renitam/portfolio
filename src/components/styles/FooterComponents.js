@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Text3, CalltoAction } from "./SharedComponents";
+import styled from 'styled-components';
+import { Text3, CalltoAction } from './SharedComponents';
 
 export const FooterSection = styled.footer`
   margin: 0 auto;
@@ -18,7 +18,7 @@ export const FooterMenu = styled.div`
 
 export const FooterText = styled(Text3)`
   cursor: pointer;
-;`
+`;
 
 export const FooterBack = styled(CalltoAction)`
   margin-right: 0;

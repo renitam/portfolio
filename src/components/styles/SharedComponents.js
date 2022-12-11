@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Slider from "react-slick";
+import styled from 'styled-components';
+import Slider from 'react-slick';
 
 // Shared components //
 
@@ -89,7 +89,7 @@ export const Link = styled.a`
   &:hover {
     opacity: 0.75;
   }
-  
+
   &:visited {
     color: #ffffff;
   }
@@ -138,7 +138,6 @@ export const StyledSlider = styled(Slider)`
 
 // Section specific classes //
 
-
 export const Avatar = styled.img`
   width: 70px;
   height: 68px;
@@ -150,7 +149,6 @@ export const Avatar = styled.img`
   //   width: 44px;
   // }
 `;
-
 
 // Intro //
 export const IntroSection = styled.section`
@@ -181,7 +179,6 @@ export const IntroActionsWrapper = styled.div`
   flex-direction: row;
   align-items: center;
 `;
-
 
 // Gradients //
 
@@ -287,7 +284,6 @@ export const Gradient3B = styled.div`
   filter: blur(70px);
   border-radius: 80% 80% 50% 50%;
 `;
-
 
 export const Gradient4 = styled.div`
   position: absolute;

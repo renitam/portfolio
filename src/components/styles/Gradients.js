@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Gradient1 = styled.div`
   position: absolute;
@@ -102,7 +102,6 @@ export const Gradient3B = styled.div`
   filter: blur(70px);
   border-radius: 80% 80% 50% 50%;
 `;
-
 
 export const Gradient4 = styled.div`
   position: absolute;
