@@ -1,19 +1,17 @@
-import React from "react";
-import { resume } from "../constants/constants";
-import { WorkExperience } from "./styles/ResumeComponents";
-import Nav from "./Nav";
+import React from 'react';
+import { resume } from '../constants/constants';
+import { WorkExperience } from './styles/ResumeComponents';
+import Nav from './Nav';
 
-const Resume = () => {
+function Resume() {
   return (
     <>
       <Nav />
       <WorkExperience>
-        {resume.map(item => {
-          return 
-        })}
+        {resume.map((item) => <p>{item}</p>)}
       </WorkExperience>
     </>
-  )
-};
+  );
+}
 
 export default Resume;

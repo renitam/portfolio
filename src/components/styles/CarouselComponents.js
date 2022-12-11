@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import Slider from "react-slick";
+import styled from 'styled-components';
+import Slider from 'react-slick';
 import {
   Tag,
   Text,
   TagList,
   CalltoAction,
   Header,
-  TagBubble
+  TagBubble,
 } from './SharedComponents';
 import arrow from '../../images/arrow.svg';
 

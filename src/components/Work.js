@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import Intro from './Intro';
 import Featured from './Featured';
 import Carousel from './Carousel';
 import Other from './Other';
 
-const Work = ({ featuredProject }) => {
+function Work({ featuredProject }) {
   return (
     <>
       <Intro />
@@ -12,8 +12,7 @@ const Work = ({ featuredProject }) => {
       <Carousel featuredProject={featuredProject} />
       <Other />
     </>
-  )
-};
-
+  );
+}
 
 export default Work;
