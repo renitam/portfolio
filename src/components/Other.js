@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   Header,
@@ -19,7 +19,7 @@ import {
 
 import placeholder from '../images/placeholder.png';
 
-const Other = () => {
+function Other() {
   return (
     <OtherSection id="other">
       <OtherArticle>
@@ -44,7 +44,7 @@ const Other = () => {
         </OtherColumns>
       </OtherArticle>
     </OtherSection>
-  )
+  );
 }
 
 export default Other;
