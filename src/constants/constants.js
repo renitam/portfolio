@@ -11,7 +11,7 @@ export const projects = [
     link: 'https://awesomecontainer.com/',
     img: acc,
     alt: 'turtle in an ocean teeming with life munching on a red piece of seaweed',
-    tags: ['React', 'Supply Chain']
+    tags: ['React', 'Supply Chain'],
   },
   {
     key: 2,
@@ -20,7 +20,7 @@ export const projects = [
     link: 'https://xxengineer-practicum.github.io/web_project_3/',
     img: portland,
     alt: 'a lighthouse surrounded by pine trees sitting on a cliff overlooking the ocean',
-    tags: ['Vanilla JS', 'CSS Grid']
+    tags: ['Vanilla JS', 'CSS Grid'],
   },
   {
     key: 3,
@@ -29,7 +29,7 @@ export const projects = [
     link: 'https://xxengineer-practicum.github.io/web_project_1/',
     img: learn,
     alt: 'a handle holding 6 books including 101 essays that will change the way you think by brianna west',
-    tags: ['Vanilla JS', 'Flexbox']
+    tags: ['Vanilla JS', 'Flexbox'],
   },
   {
     key: 4,
@@ -38,7 +38,7 @@ export const projects = [
     link: 'https://xxengineer-practicum.github.io/around-react/',
     img: '#',
     alt: '',
-    tags: ['MongoDB', 'Express', 'React', 'Nginx']
+    tags: ['MongoDB', 'Express', 'React', 'Nginx'],
   },
   {
     key: 5,
@@ -47,8 +47,8 @@ export const projects = [
     link: 'https://www.renita.io',
     img: '#',
     alt: '',
-    tags: ['React Slick', 'Styled Components']
-  }
+    tags: ['React Slick', 'Styled Components'],
+  },
 ];
 
 export const resume = [
@@ -57,27 +57,27 @@ export const resume = [
     company: 'Coda',
     role: 'Customer Champion',
     tenure: 'July 2020 - Present',
-    desc: 'Supporting makers at Coda with onboarding, bug reporting & doc troubleshooting.'
+    desc: 'Supporting makers at Coda with onboarding, bug reporting & doc troubleshooting.',
   },
   {
     key: 2,
     company: 'Fictiv',
     role: 'Customer Experience Specialist',
     tenure: 'Sept 2019 - Feb 2020',
-    desc: 'Handled customer inquiries through Intercom and phone calls using MightyCall. Partnered with product and engineering teams to communicate customer issues and assist with prioritizing bugs in JIRA. Collaborated with technical application engineers and QA on customer specs to ensure that customer requests are delivered.'
+    desc: 'Handled customer inquiries through Intercom and phone calls using MightyCall. Partnered with product and engineering teams to communicate customer issues and assist with prioritizing bugs in JIRA. Collaborated with technical application engineers and QA on customer specs to ensure that customer requests are delivered.',
   },
   {
     key: 3,
     company: 'Noom',
     role: 'User Support Specialist',
     tenure: 'Aug 2015 - Nov 2015',
-    desc: 'Provided email support to customers in a timely manner, ranging from bugs and account support to signing up new users. Helped migrate our support team from Uservoice to Zendesk. Communicated defects and customer feedback to internal stakeholders.'
+    desc: 'Provided email support to customers in a timely manner, ranging from bugs and account support to signing up new users. Helped migrate our support team from Uservoice to Zendesk. Communicated defects and customer feedback to internal stakeholders.',
   },
   {
     key: 4,
     company: 'Enrollment Advisor',
     role: 'Pearson Online & Blended Learning',
     tenure: 'Jul 2016 - Aug 2018',
-    desc: 'Assisted families during enrollment periods in a call-center environment for online public-schools. Reviewed document submissions and reviewed to ensure families met state guidelines. Provided internal customer service to schools and served as a liaison for enrolling parents.'
+    desc: 'Assisted families during enrollment periods in a call-center environment for online public-schools. Reviewed document submissions and reviewed to ensure families met state guidelines. Provided internal customer service to schools and served as a liaison for enrolling parents.',
   },
-]
+];
