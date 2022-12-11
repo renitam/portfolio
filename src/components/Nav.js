@@ -1,22 +1,21 @@
-import React from "react";
-
-import profile from "../images/avatar.png";
-import linkedin from "../images/linkedin-circle.svg";
-import github from "../images/github-circle.svg";
+import React from 'react';
+import profile from '../images/avatar.png';
+import linkedin from '../images/linkedin-circle.svg';
+import github from '../images/github-circle.svg';
 
 import {
   Avatar,
   NavMenu,
   NavOptions,
-  NavItem,
-  NavLink,
+  // NavItem,
+  // NavLink,
   NavSocials,
-  NavIcon
+  NavIcon,
 } from './styles/NavComponents';
- 
+
 import { Link } from './styles/SharedComponents';
 
-const Nav = () => {
+function Nav() {
   return (
     <NavMenu id="nav">
       <Avatar alt="profile pic" src={profile} />
@@ -40,7 +39,7 @@ const Nav = () => {
         </Link>
       </NavSocials>
     </NavMenu>
-  )
+  );
 }
 
 export default Nav;
