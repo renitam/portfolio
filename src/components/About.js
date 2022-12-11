@@ -1,12 +1,12 @@
-import React from "react";
-import Nav from "./Nav";
+import React from 'react';
+import Nav from './Nav';
 
-const About = () => {
+function About() {
   return (
     <>
       <Nav />
     </>
-  )
-};
+  );
+}
 
 export default About;

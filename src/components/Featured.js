@@ -1,5 +1,5 @@
 import React from 'react';
-import iPad from "../images/ipad.svg";
+import iPad from '../images/ipad.svg';
 
 import {
   Gradient2,
@@ -21,21 +21,20 @@ import {
   CalltoAction,
   TagList,
   TagBubble,
-  Tag
+  Tag,
 } from './styles/SharedComponents';
 
-const Featured = ({ featuredProject }) => {
+function Featured({ featuredProject }) {
   return (
-    <FeaturedSection id='featured'>
+    <FeaturedSection id="featured">
       <Gradient2>
         <Gradient2A />
         <Gradient2B />
       </Gradient2>
       <FeaturedProjectArticle>
         <TagList>
-          {featuredProject.tags.map( (tag, i) => 
-            <TagBubble key={i}><Tag>{tag}</Tag></TagBubble>
-          )}
+          {featuredProject.tags.map((tag, i) =>
+            <TagBubble key={i}><Tag>{tag}</Tag></TagBubble>)}
         </TagList>
         <Header>{featuredProject.name}</Header>
         <Text2>{featuredProject.desc}</Text2>
@@ -44,10 +43,10 @@ const Featured = ({ featuredProject }) => {
         </Link>
       </FeaturedProjectArticle>
       <FeaturedImageWrapper>
-        <FeaturedImage src={iPad} alt='iPad frame'/>
+        <FeaturedImage src={iPad} alt="iPad frame" />
       </FeaturedImageWrapper>
     </FeaturedSection>
-  )
+  );
 }
 
 export default Featured;

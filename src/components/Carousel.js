@@ -1,6 +1,6 @@
 import React from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import placeholder from '../images/placeholder.png';
 import { projects } from '../constants/constants';
 
@@ -13,10 +13,7 @@ import {
   Gradient4B,
 } from './styles/Gradients';
 
-import {
-  Link,
-  TagBubble,
-} from './styles/SharedComponents';
+import { Link } from './styles/SharedComponents';
 
 import {
   CarouselHeader,
@@ -37,13 +34,13 @@ const carouselSettings = {
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 };
 
 // .filter(project => project.name !== featuredProject.name )
 
 const renderSlides = (featuredProject) => {
-  return projects.filter(project => project.name !== featuredProject.name).map(project =>
+  return projects.filter((project) => project.name !== featuredProject.name).map((project) =>
     <div key={project.key}>
       <CarouselProject>
         <CarouselTextWrapper>
@@ -52,23 +49,21 @@ const renderSlides = (featuredProject) => {
             {project.tags.map((tag, i) =>
               <CarouselTagBubble key={i}>
                 <CarouselTag>{tag}</CarouselTag>
-              </CarouselTagBubble>
-            )}
+              </CarouselTagBubble>)}
           </CarouselTagList>
           <CarouselText>{project.desc}</CarouselText>
-          <Link href={project.link} target='_blank' rel='noreferrer'>
+          <Link href={project.link} target="_blank" rel="noreferrer">
             <CarouselCalltoAction>Show me more &#8594;</CarouselCalltoAction>
           </Link>
         </CarouselTextWrapper>
-        <CarouselImage src={project.img === "#" ? placeholder : project.img} alt="a tent on grass with one pine tree" />
+        <CarouselImage src={project.img === '#' ? placeholder : project.img} alt={project.img === '#' ? 'a tent on grass with one pine tree' : project.alt} />
       </CarouselProject>
-    </div>
-  )
-}
+    </div>);
+};
 
-const Carousel = ({ featuredProject }) => {
+function Carousel({ featuredProject }) {
   return (
-    <CarouselSection id='work'>
+    <CarouselSection id="work">
       <Gradient3>
         <Gradient3A />
         <Gradient3B />
@@ -81,7 +76,7 @@ const Carousel = ({ featuredProject }) => {
         {renderSlides(featuredProject)}
       </StyledSlider>
     </CarouselSection>
-  )
-};
+  );
+}
 
 export default Carousel;

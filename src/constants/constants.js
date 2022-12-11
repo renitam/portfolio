@@ -6,10 +6,11 @@ import acc from '../images/acc.png';
 export const projects = [
   {
     key: 1,
-    name: "Awesome Container Company",
-    desc: "In Q1 2022, I helped build a website for the Awesome Container Company, an app based logistics company in Singapore.",
+    name: 'Awesome Container Company',
+    desc: 'In Q1 2022, I helped build a website for the Awesome Container Company, an app based logistics company in Singapore.',
     link: 'https://awesomecontainer.com/',
     img: acc,
+    alt: 'turtle in an ocean teeming with life munching on a red piece of seaweed',
     tags: ['React', 'Supply Chain']
   },
   {
@@ -18,14 +19,16 @@ export const projects = [
     desc: 'In Q3 of 2021, I built a website for my bootcamp depicting road trip stops from Portland, OR to Portland, ME.',
     link: 'https://xxengineer-practicum.github.io/web_project_3/',
     img: portland,
+    alt: 'a lighthouse surrounded by pine trees sitting on a cliff overlooking the ocean',
     tags: ['Vanilla JS', 'CSS Grid']
   },
   {
-    key: 3, 
+    key: 3,
     name: 'Learning How to Learn',
     desc: 'In Q2 of 2021, I took my first stab at flexbox and absolute positioning. It was my first time using HTML & CSS. I enjoyed putting this website together because it features some of my favorite learning resources.',
     link: 'https://xxengineer-practicum.github.io/web_project_1/',
     img: learn,
+    alt: 'a handle holding 6 books including 101 essays that will change the way you think by brianna west',
     tags: ['Vanilla JS', 'Flexbox']
   },
   {
@@ -34,6 +37,7 @@ export const projects = [
     desc: 'For Q4 of 2021 through to Q2 of 2022, I rebuilt this website from the ground up: first in Vanilla JS, then in React, then in Node.js for a complete fullstack product with registration, authentication and security protocols.',
     link: 'https://xxengineer-practicum.github.io/around-react/',
     img: '#',
+    alt: '',
     tags: ['MongoDB', 'Express', 'React', 'Nginx']
   },
   {
@@ -42,6 +46,7 @@ export const projects = [
     desc: 'I built my portfolio using a Figma design that I customized for my own purposes. It features CSS gradients and interchangeable projects that I can manage and update with one click.',
     link: 'https://www.renita.io',
     img: '#',
+    alt: '',
     tags: ['React Slick', 'Styled Components']
   }
 ];

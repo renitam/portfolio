@@ -1,36 +1,36 @@
-import React from "react";
+import React from 'react';
 
 import {
-  Gradient1, 
-  Gradient1A, 
-  Gradient1B, 
+  Gradient1,
+  Gradient1A,
+  Gradient1B,
 } from './styles/Gradients';
 
-import {  
-  Text, 
+import {
+  Text,
   Button,
   Link,
-  CalltoAction 
-} from "./styles/SharedComponents";
+  CalltoAction,
+} from './styles/SharedComponents';
 
 import {
   IntroSection,
-  IntroAboutArticle, 
+  IntroAboutArticle,
   IntroHeader,
-  IntroActionsWrapper, 
+  IntroActionsWrapper,
 } from './styles/IntroComponents';
 
-const Intro = () => {
+function Intro() {
   return (
-    <IntroSection id='intro'>
+    <IntroSection id="intro">
       <Gradient1>
         <Gradient1A />
         <Gradient1B />
       </Gradient1>
       <IntroAboutArticle>
-        <IntroHeader>Hi, I'm Renita</IntroHeader>
+        <IntroHeader>Hi, I&apos;m Renita</IntroHeader>
         <Text>
-          I’m a customer-centric software engineer with experience building tools that help teams win 
+          I&apos;m a customer-centric software engineer building tools to help teams win
         </Text>
         <IntroActionsWrapper>
           <Button>Say Hi 👋</Button>
@@ -40,7 +40,7 @@ const Intro = () => {
         </IntroActionsWrapper>
       </IntroAboutArticle>
     </IntroSection>
-  )
+  );
 }
 
 export default Intro;

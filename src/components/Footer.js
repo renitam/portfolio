@@ -1,12 +1,17 @@
-import React from "react";
-import { FooterText, FooterBack, FooterMenu, FooterSection } from "./styles/FooterComponents";
-import { Link, Text3 } from "./styles/SharedComponents";
+import React from 'react';
+import {
+  FooterText,
+  FooterBack,
+  // FooterMenu,
+  FooterSection,
+} from './styles/FooterComponents';
+import { Link } from './styles/SharedComponents';
 
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
-const Footer = () => {
+function Footer() {
   return (
     <FooterSection>
       <Link href="https://www.renita.io"><FooterText>&copy; 2022 Renita M</FooterText></Link>
@@ -17,7 +22,7 @@ const Footer = () => {
       </FooterMenu> */}
       <Link onClick={scrollToTop}><FooterBack>Back up &#8593;</FooterBack></Link>
     </FooterSection>
-  )
+  );
 }
 
 export default Footer;

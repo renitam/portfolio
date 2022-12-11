@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useHistory } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { projects } from './constants/constants';
 import Work from './components/Work';
@@ -16,10 +16,10 @@ function App() {
       <Nav />
       <main>
         <Routes>
-          <Route path='/' element={<Work featuredProject={featuredProject} />} />
-          <Route path='/work' element={<Work featuredProject={featuredProject} />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/resume' element = {<Resume />} />
+          <Route path="/" element={<Work featuredProject={featuredProject} />} />
+          <Route path="/work" element={<Work featuredProject={featuredProject} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </main>
       <Footer />
