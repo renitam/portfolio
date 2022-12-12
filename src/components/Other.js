@@ -17,6 +17,8 @@ import {
   CardHeader,
 } from './styles/OtherComponents';
 
+import { template } from '../constants/constants';
+
 import placeholder from '../images/placeholder.png';
 
 function Other() {
@@ -27,18 +29,18 @@ function Other() {
         <OtherColumns>
           <CardDesc>
             <OtherCardImg src={placeholder} />
-            <CardHeader>Project Title</CardHeader>
-            <Text3>Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.</Text3>
+            <CardHeader>{template.name}</CardHeader>
+            <Text3>{template.desc}</Text3>
             <TagList>
-              <TagBubble><Tag>Mobile App</Tag></TagBubble>
+              <TagBubble><Tag>{template.tag}</Tag></TagBubble>
             </TagList>
           </CardDesc>
           <CardDesc>
             <OtherCardImg src={placeholder} />
-            <CardHeader>Project Title</CardHeader>
-            <Text3>Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.</Text3>
+            <CardHeader>{template.name}</CardHeader>
+            <Text3>{template.desc}</Text3>
             <TagList>
-              <TagBubble><Tag>Mobile App</Tag></TagBubble>
+              <TagBubble><Tag>{template.tag}</Tag></TagBubble>
             </TagList>
           </CardDesc>
         </OtherColumns>

@@ -51,6 +51,12 @@ export const projects = [
   },
 ];
 
+export const template = {
+  name: 'Project Title',
+  desc: 'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
+  tag: 'Mobile App',
+};
+
 export const resume = [
   {
     key: 1,
