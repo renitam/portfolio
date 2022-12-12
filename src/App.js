@@ -9,23 +9,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 
 function App() {
-  // const [featuredProject, setFeaturedProject] = React.useState(projects[3]);
-
-  App.propTypes = {
-    featuredProject: PropTypes.shape({
-      key: PropTypes.number,
-      name: PropTypes.string,
-      desc: PropTypes.string,
-      link: PropTypes.string,
-      img: PropTypes.string,
-      alt: PropTypes.string,
-      tags: PropTypes.arrayOf(PropTypes.string),
-    }),
-  };
-
-  Work.defaultProps = {
-    featuredProject: projects[3],
-  };
+  const [featuredProject, setFeaturedProject] = React.useState(projects[3]);
 
   return (
     <>
