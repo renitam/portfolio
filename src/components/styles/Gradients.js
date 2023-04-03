@@ -128,7 +128,7 @@ export const Gradient4A = styled.div`
 export const Gradient4B = styled.div`
   /* Vector */
   width: 211.85px;
-  159.12px;
+  // 159.12px;
   position: absolute;
   left: 19%;
   right: 3.4%;
