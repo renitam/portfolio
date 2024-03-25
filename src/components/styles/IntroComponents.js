@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const IntroSection = styled.section`
+export const IntroSection = styled.header`
   position: relative;
   max-width: 1184px;
   margin: 0 auto;

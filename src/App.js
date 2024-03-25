@@ -14,14 +14,12 @@ function App() {
   return (
     <>
       <Nav />
-      <main>
-        <Routes>
-          <Route path="/" element={<Work featuredProject={featuredProject} />} />
-          <Route path="/work" element={<Work featuredProject={featuredProject} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/work" element={<Work featuredProject={featuredProject} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/*" element={<Work featuredProject={featuredProject} />} />
+      </Routes>
       <Footer />
     </>
   );

@@ -43,7 +43,7 @@ export const projects = [
   {
     key: 5,
     name: 'My Portfolio',
-    desc: 'This portfolio was created using a Figma design that my fiancé customized for me. The website features CSS gradients and interchangeable projects that viewers can inspect and interact with.',
+    desc: 'This portfolio was created using a Figma design that I customized. The website features CSS gradients and interchangeable projects that viewers can inspect and interact with.',
     link: 'https://www.renita.io',
     img: '#',
     alt: '',

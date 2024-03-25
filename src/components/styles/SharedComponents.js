@@ -42,17 +42,15 @@ export const Text2 = styled.p`
 export const Text3 = styled.p`
   /* Medium • 17 • M */
   margin: 0;
-  font-family: 'SF Pro Text';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
+  
   /* or 129% */
-
   letter-spacing: 0.0043em;
 
   /* Text + Icons/Dark • Medium Emphasis */
-
   color: rgba(255, 255, 255, 0.7);
   cursor: default;
 `;
@@ -62,7 +60,6 @@ export const Button = styled.button`
   background-color: #ffffff;
   border-radius: 12px;
   margin: 0;
-  font-family: 'SF Pro Text', 'sans-serif';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -96,7 +93,6 @@ export const Link = styled.a`
 `;
 
 export const CalltoAction = styled.p`
-  font-family: 'SF Pro Text';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -121,11 +117,11 @@ export const TagBubble = styled.div`
 
 export const Tag = styled.p`
   /* Tiny • 12 */
-  font-family: 'SF Pro Text';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;  /* identical to box height, or 133% */
+  
   /* Text + Icons/Dark • High Emphasis */
   color: #FFFFFF;
   margin: 6px 12px;

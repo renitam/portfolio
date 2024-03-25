@@ -2,6 +2,7 @@ import React from 'react';
 import profile from '../images/avatar.png';
 import linkedin from '../images/linkedin-circle.svg';
 import github from '../images/github-circle.svg';
+import tiktok from '../images/tiktok-circle.svg';
 
 import {
   Avatar,
@@ -31,11 +32,14 @@ function Nav() {
         </NavLink> */}
       </NavOptions>
       <NavSocials>
-        <Link href="https://www.linkedin.com/in/mwangachuchu/" target="_blank">
-          <NavIcon src={linkedin} alt="Linked in icon" />
+        <Link href="https://www.github.com/renitam" target="_blank">
+          <NavIcon src={github} alt="GitHub icon" />
         </Link>
-        <Link href="https://github.com/xxengineer-practicum" target="_blank">
-          <NavIcon src={github} alt="Git hub icon" />
+        <Link href="https://www.tiktok.com/@renitadevlab" target="_blank">
+          <NavIcon src={tiktok} alt="TikTok icon" />
+        </Link>
+        <Link href="https://www.linkedin.com/in/mwangachuchu/" target="_blank">
+          <NavIcon src={linkedin} alt="LinkedIn icon" />
         </Link>
       </NavSocials>
     </NavMenu>

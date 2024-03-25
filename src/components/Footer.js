@@ -11,10 +11,16 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
+function currentYear() {
+  const date = new Date();
+  const year = date.getFullYear();
+  return year;
+}
+
 function Footer() {
   return (
     <FooterSection>
-      <Link href="https://www.renita.io"><FooterText>&copy; 2022 Renita M</FooterText></Link>
+      <Link href="https://www.renita.io"><FooterText>&copy; {currentYear()} Renita M</FooterText></Link>
       {/* <FooterMenu>
         <Link href="#intro"><FooterText>Work</FooterText></Link>
         <Link href="#about"><FooterText>About</FooterText></Link>

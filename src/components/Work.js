@@ -8,9 +8,11 @@ function Work({ featuredProject }) {
   return (
     <>
       <Intro />
-      <Featured featuredProject={featuredProject} />
-      <Carousel featuredProject={featuredProject} />
-      <Other />
+      <main>
+        <Featured featuredProject={featuredProject} />
+        <Carousel featuredProject={featuredProject} />
+        <Other />
+      </main>
     </>
   );
 }
