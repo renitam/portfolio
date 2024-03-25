@@ -1,7 +1,8 @@
 // import apiary from '../images/apiary.svg';
 import portland from '../images/maine_lighthouse.jpeg';
 import learn from '../images/learn.png';
-import acc from '../images/acc.png';
+import acc from '../images/plastic.png';
+import portfolio from '../images/placeholder.png';
 
 export const projects = [
   {
@@ -45,8 +46,8 @@ export const projects = [
     name: 'My Portfolio',
     desc: 'This portfolio was created using a Figma design that I customized. The website features CSS gradients and interchangeable projects that viewers can inspect and interact with.',
     link: 'https://www.renita.io',
-    img: '#',
-    alt: '',
+    img: portfolio,
+    alt: 'A screenshot of the header section of my first portfolio website.',
     tags: ['React Slick', 'Styled Components'],
   },
 ];
