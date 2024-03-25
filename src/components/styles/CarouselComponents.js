@@ -134,7 +134,7 @@ export const CarouselImage = styled.img`
   max-width: 412px;
   max-height: 379px;
   margin: 24px auto;
-  object-fit: cover;
+  object-fit: fill;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
