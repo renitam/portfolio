@@ -10,7 +10,7 @@ function Work({ featuredProject }) {
       <Intro />
       <Featured featuredProject={featuredProject} />
       <Carousel featuredProject={featuredProject} />
-      <Other />
+      {/* <Other /> */}
     </>
   );
 }

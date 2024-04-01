@@ -11,6 +11,7 @@
 
 # production
 /build
+.aws-keys.json
 
 # misc
 .DS_Store

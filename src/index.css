@@ -5,6 +5,13 @@
   src: url(./vendors/SFProDisplay-Regular.ttf), format('ttf');
 }
 
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url(./vendors/SFProText-Regular.ttf), format('ttf');
+}
+
 body {
   margin: 0;
   font-family: 'SF Pro Display', sans-serif;
