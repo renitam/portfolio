@@ -8,11 +8,8 @@ function Work({ featuredProject }) {
   return (
     <>
       <Intro />
-      <main>
-        <Featured featuredProject={featuredProject} />
-        <Carousel featuredProject={featuredProject} />
-        <Other />
-      </main>
+      <Carousel featuredProject={featuredProject} />
+      {/* <Other /> */}
     </>
   );
 }
