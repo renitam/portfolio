@@ -31,6 +31,7 @@ export const OtherCardImg = styled.img`
   width: 100%;
   margin: 24px 0;
   border-radius: 32px;
+  background-color: #292929;
 `;
 
 export const CardDesc = styled.div`

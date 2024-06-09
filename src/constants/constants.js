@@ -12,7 +12,7 @@ export const projects = [
     link: 'https://awesomecontainer.com/',
     img: acc,
     alt: 'turtle in an ocean teeming with life munching on a red piece of seaweed',
-    tags: ['React', 'Supply Chain'],
+    tags: ['React', 'Animation', 'Carousel'],
   },
   {
     key: 2,
@@ -45,10 +45,10 @@ export const projects = [
     key: 5,
     name: 'My Portfolio',
     desc: 'This portfolio was created using a Figma design that I customized. The website features CSS gradients and interchangeable projects that viewers can inspect and interact with.',
-    link: 'https://www.renita.io',
+    link: 'https://renitam.github.io/portfolio/',
     img: portfolio,
     alt: 'A screenshot of the header section of my first portfolio website.',
-    tags: ['React Slick', 'Styled Components'],
+    tags: ['React', 'Styled Components', 'Carousel', 'CSS Gradients'],
   },
 ];
 
@@ -56,6 +56,7 @@ export const template = {
   name: 'Project Title',
   desc: 'Fill your project brief here. It can be the outcome of the project, or some success metrics, or a cheesy tagline.',
   tag: 'Mobile App',
+  link: 'renitam.github.io/portfolio',
 };
 
 export const resume = [
