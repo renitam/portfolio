@@ -37,6 +37,21 @@ export const StyledSlider = styled(Slider)`
     }
   }
 
+  @media screen and (max-width: 1100px) {
+      .slick-arrow {
+        height: 40px;
+        width: 40px;
+      }
+
+      .slick-prev {
+        left: 0px;
+      }
+
+      .slick-next {
+        right: 0px;
+      }
+    }
+
   .slick-prev {
     position: absolute;
     left: -60px;
@@ -50,21 +65,9 @@ export const StyledSlider = styled(Slider)`
     position: absolute;
     right: -60px;
     transform: rotate(180deg);
+
     &:before {
       content: '';
-    }
-    &:hover {
-      background-image: url(${arrow});
-      background-color: #333333;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 50%;
-      margin: 0;
-      height: 56px;
-      width: 56px;
-      opacity: 0.75;
-      transition: linear 0.25s opacity;
-      border: none;
     }
   }
 `;
@@ -73,8 +76,16 @@ export const CarouselSection = styled.section`
   max-width: 1184px;
   margin: 0 auto;
   display: flex;
-  position: relative;
-  padding: 100px 24px;
+  padding: 50px 24px;
+
+  @media (max-width: 1100px) {
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 56px;
+  }
 `;
 
 export const CarouselProject = styled.article`
@@ -83,24 +94,41 @@ export const CarouselProject = styled.article`
   justify-content: center;
   max-width: 1184px;
   cursor: pointer;
-  padding: 0 24px;
+  padding: 0;
   gap: 12px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
 `;
 
 export const CarouselTextWrapper = styled.div`
   margin: 0 auto;
+  max-width: 412px;
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: center;
+  text-align: center;
 `;
 
 export const CarouselHeader = styled(Header)`
   letter-spacing: 0.0022em;
   cursor: pointer;
+
+  @media and screen (max-width: 375px) {
+    font-size: 24px;
+  }
 `;
 
 export const CarouselTagList = styled(TagList)`
   margin: 22px 0 10px;
+  justify-content: center;
 `;
 
 export const CarouselTagBubble = styled(TagBubble)`
@@ -127,16 +155,16 @@ export const CarouselText = styled(Text)`
 `;
 
 export const CarouselCalltoAction = styled(CalltoAction)`
-  margin: 29px 0 0;
+  margin: 29px auto 0;
 `;
 
 export const CarouselImage = styled.img`
   max-width: 412px;
   max-height: 379px;
+  width: 100%;
+  height: 100%;
   margin: 24px auto;
   object-fit: fill;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
   border-radius: 32px;
 `;
